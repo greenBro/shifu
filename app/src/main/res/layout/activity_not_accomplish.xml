@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_hui"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/spinnerarray"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <yuangong.id.view.ClearEditText
+                        android:id="@+id/search_content"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gridview_text_white_quan"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:singleLine="true"
+                        android:textSize="@dimen/default_text"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gridview_text_white_quan"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="搜索"/>
+            </LinearLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/bg_hui"
+                android:dividerHeight="1dp"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vMasker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0313131"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

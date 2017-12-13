@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">\u5458\u5de5\u7aef\u000d\u000a</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+
+    <string-array name="spinnerarray">
+        <item>手机号</item>
+        <item>车牌号</item>
+        <item>用户名</item>
+    </string-array>
+    <string-array name="teamspinnerarray">
+        <item>手机号</item>
+        <item>车牌号</item>
+        <item>用户名</item>
+    </string-array>
+    <string-array name="onlinespinnerarray">
+        <item>手机号</item>
+        <item>车牌号</item>
+    </string-array>
+    <string-array name="datearray">
+        <item>手机号</item>
+        <item>用户名</item>
+    </string-array>
+</resources>

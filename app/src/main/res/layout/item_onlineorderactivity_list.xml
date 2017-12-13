@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:text="张先生（18632326565）"
+        android:textSize="17dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/item_name"
+        android:id="@+id/item_detail"
+        android:layout_marginTop="8dp"
+        android:text="川A36251 002"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/item_forward"
+        android:src="@drawable/chevron"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/is_clear"
+        android:text="已清洗"
+        android:visibility="gone"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/item_detail"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/title_lan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

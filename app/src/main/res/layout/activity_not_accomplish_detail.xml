@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hui"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/parentView"
+    >
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系方式："/>
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="张先生 18685853606"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车  牌  号："/>
+
+                        <TextView
+                            android:id="@+id/car_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="川15465"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="停放位置："/>
+
+                        <TextView
+                            android:id="@+id/stop_site"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负一楼002"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="清洗项目："/>
+
+                        <TextView
+                            android:id="@+id/product_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="快洗"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预约时间："/>
+
+                        <TextView
+                            android:id="@+id/order_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20160913"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="清洗状态："/>
+
+                        <TextView
+                            android:id="@+id/clear_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未清洗"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车主备注："/>
+
+                        <TextView
+                            android:id="@+id/user_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="尽快清洗、晚上11点左右用车"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:text="请选择洗车员工："
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <yuangong.id.view.MyGridView
+                    android:numColumns="4"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:verticalSpacing="6dp"
+                    android:id="@+id/myGridView"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </yuangong.id.view.MyGridView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="7dp"
+                        android:text="上传图片(洗车前)"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/delete_forward1"
+                                android:visibility="gone"
+                                android:src="@drawable/deleteimg"
+                                android:layout_toRightOf="@+id/clear_forward1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <ImageView
+                                android:id="@+id/clear_forward1"
+                                android:layout_width="90dp"
+                                android:layout_height="72.5dp"
+                                android:src="@mipmap/add_image"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/delete_forward2"
+                            android:visibility="gone"
+                            android:src="@drawable/deleteimg"
+                            android:layout_toRightOf="@+id/clear_forward2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/clear_forward2"
+                            android:layout_width="90dp"
+                            android:layout_height="72.5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:src="@mipmap/add_image"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="洗车后"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/delete_back1"
+                            android:visibility="gone"
+                            android:src="@drawable/deleteimg"
+                            android:layout_toRightOf="@+id/clear_back1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/clear_back1"
+                            android:layout_width="90dp"
+                            android:layout_height="72.5dp"
+                            android:src="@mipmap/add_image"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/delete_back2"
+                            android:visibility="gone"
+                            android:src="@drawable/deleteimg"
+                            android:layout_toRightOf="@+id/clear_back2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/clear_back2"
+                            android:layout_width="90dp"
+                            android:layout_height="72.5dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:src="@mipmap/add_image"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="洗车工备注(字数不超过20)"/>
+
+                    <EditText
+                        android:id="@+id/staff_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="17dp"
+                        android:background="@color/bg_hui"
+                        android:maxLength="20"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:id="@+id/delay_oneday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gridview_text_white1_quan"
+                        android:gravity="center"
+                        android:text="延迟一天"/>
+
+                    <TextView
+                        android:id="@+id/sure_clear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/gridview_text_blue_quan"
+                        android:gravity="center"
+                        android:text="确认清洗"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vMasker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e0313131"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

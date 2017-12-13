@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/shape_pop_bg"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:text="增加洗车工"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓        名："/>
+
+        <yuangong.id.view.ClearEditText
+            android:padding="6dp"
+            android:id="@+id/staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/bg_hui"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="6dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="联系方式："/>
+
+        <yuangong.id.view.ClearEditText
+            android:id="@+id/staff_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/bg_hui"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/gridview_text_white1_quan"
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridview_text_blue_quan"
+            android:textColor="@color/white"
+            android:text="确定"/>
+
+    </RelativeLayout>
+</LinearLayout>

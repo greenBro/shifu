@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hui"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="洗车工"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="联系方式"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="操作"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:divider="@color/bg_hui"
+                    android:dividerHeight="1dp"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+                <TextView
+                    android:id="@+id/add_new_staff"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/title_lan"
+                    android:gravity="center"
+                    android:text="新增洗车工"
+                    android:textColor="@color/white"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/sure_btn"
+                        android:layout_width="156dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/title_lan"
+                        android:gravity="center"
+                        android:text="确认删除"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vMasker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0313131"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

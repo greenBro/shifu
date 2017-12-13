@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:background="@color/bg_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/all"
+            style="@style/PopupWindowTextView"
+            android:text="所有"/>
+
+
+        <RadioButton
+            android:id="@+id/type"
+            style="@style/PopupWindowTextView"
+            android:text="套餐服务"/>
+
+        <RadioButton
+            android:id="@+id/cosmetology"
+            style="@style/PopupWindowTextView"
+            android:text="单次服务"/>
+
+        <RadioButton
+            android:id="@+id/clearCar"
+            style="@style/PopupWindowTextView"
+            android:text="美容服务"/>
+
+        <RadioButton
+            android:id="@+id/numberCard"
+            style="@style/PopupWindowTextView"
+            android:text="次卡服务"/>
+        <RadioButton
+            android:id="@+id/everyDay"
+            style="@style/PopupWindowTextView"
+            android:text="天天洗服务"/>
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_hui"/>
+</LinearLayout>

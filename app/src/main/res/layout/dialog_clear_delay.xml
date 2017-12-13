@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/gridview_text_white_quan"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+
+              android:padding="@dimen/activity_horizontal_margin">
+
+    <RadioGroup
+        android:id="@+id/dialog_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dialog_rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selecter_dialog_rb"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="车辆未停放在位置"
+            android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/dialog_rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/selecter_dialog_rb"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="车辆与停放位置不符"
+            android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/dialog_rg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/selecter_dialog_rb"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="车主临时有事"
+            android:textSize="14dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/other_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_hui"
+        android:gravity="center"
+        android:hint="请输入其他原因"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="14dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/gridview_text_white1_quan"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/gridview_text_blue_quan"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

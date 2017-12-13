@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="yuangong.id"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 对sd卡文件夹的创建以及修改权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 登录界面 -->
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 主界面 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 资费界面 -->
+        <activity
+            android:name=".ui.activity.PostageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 在线订单界面 -->
+        <activity
+            android:name=".ui.activity.OnLineOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 任务详情界面 -->
+        <activity
+            android:name=".ui.activity.TaskDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 优惠活动界面 -->
+        <activity
+            android:name=".ui.activity.PreferentialActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 优惠活动详情界面 -->
+        <activity
+            android:name=".ui.activity.PreferentialDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 团队管理界面 -->
+        <activity
+            android:name=".ui.activity.TeamManageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 到期提醒界面 -->
+        <activity
+            android:name=".ui.activity.BecomeDueNotifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 到期提醒详情界面 -->
+        <activity
+            android:name=".ui.activity.BecomeDueDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 设置界面 -->
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 关于我们界面 -->
+        <activity
+            android:name=".ui.activity.AboutUsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 修改密码界面 -->
+        <activity
+            android:name=".ui.activity.ChangePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 未完成任务列表界面 -->
+        <activity
+            android:name=".ui.activity.NotAccomplishActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 完成任务列表界面 -->
+        <activity
+            android:name=".ui.activity.AccomplishActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 未完成任务详情界面 -->
+        <activity
+            android:name=".ui.activity.NotAccomplishDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 完成任务详情界面 -->
+        <activity
+            android:name=".ui.activity.AccomplishDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 注册广播 -->
+        <receiver android:name=".ui.broadcast.NetWorkBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 选择照片界面 -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

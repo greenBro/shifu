@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:textSize="17dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="满200减20活动"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/condition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗N次赠一次"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/title_lan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动结束时间："/>
+
+            <TextView
+                android:id="@+id/finsh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_lan"
+                android:text="2016-09-13 10:00"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

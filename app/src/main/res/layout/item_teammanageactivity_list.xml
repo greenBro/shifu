@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_hui"
+                android:orientation="vertical"
+    >
+
+    <yuangong.id.view.SlidingMenu
+        android:id="@+id/slidingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuWidth="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="小明"/>
+
+                <TextView
+                    android:id="@+id/item_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="8dp"
+                    android:text="18656253652"/>
+
+                <TextView
+                    android:id="@+id/item_forward"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gridview_text_blue_quan"
+                    android:gravity="center"
+                    android:text="转移到"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#f9a213"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </yuangong.id.view.SlidingMenu>
+
+
+</RelativeLayout>
